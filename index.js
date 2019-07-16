@@ -7,7 +7,7 @@ const petRoutes = require('./routes/pets/petsRouter');
 const postRoutes = require('./routes/posts/postsRouter');
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use('/api/users', userRoutes);
 app.use('/api/pets', petRoutes);
